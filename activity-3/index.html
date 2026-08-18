@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Notes</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      max-width: 500px;
+      margin: auto;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    textarea {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      height: 80px;
+      margin-bottom: 8px;
+      font-family: sans-serif;
+    }
+    button {
+      padding: 10px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .note-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .note-title { font-weight: bold; }
+    .note-date { color: #666; font-size: 0.85em; margin-top: 4px; }
+    .note-text { margin-top: 6px; }
+    .delete { cursor: pointer; color: red; }
+  </style>
+</head>
+<body>
+  <h1>My Notes</h1>
+  <p><small>Each note saves its title, text, and the date it was added.</small></p>
+
+  <input id="titleInput" type="text" placeholder="Note title" />
+  <textarea id="noteInput" placeholder="Write your note..."></textarea>
+  <button id="addBtn">Add Note</button>
+
+  <ul id="noteList"></ul>
+
+  <!-- This is the important line: it links our JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
